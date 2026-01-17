@@ -1,14 +1,14 @@
-import Logo from "@/assets/images/logo.png";
-import IconUser from "@/assets/images/icon-user.png";
-import IconCart from "@/assets/images/icon-cart.png";
 import IconAbout from "@/assets/images/icon-about.png";
+import IconCart from "@/assets/images/icon-cart.png";
+import IconUser from "@/assets/images/icon-user.png";
+import Logo from "@/assets/images/logo.png";
 
 export const Header = () => {
   return (
     <div className="relative">
-      <header className="fixed top-0 left-0 right-0 z-10 mx-10">
-        <div className="bg-white max-w-[1320px] mx-auto flex justify-between items-center py-5 px-7 rounded-2xl mt-5">
-          <img src={Logo} alt="Logo Syntax-wear" className="w-32 md:w-36"/>
+      <header className="fixed top-10 left-0 right-0 z-10 mx-10">
+        <div className="bg-white max-w-[1320px] mx-auto flex justify-between items-center py-3 px-7 rounded-2xl mt-5">
+          <img src={Logo} alt="Logo SyntaxWear" className="w-32 md:w-36" />
 
           <nav className="hidden md:block">
             <ul className="flex gap-10">
@@ -24,7 +24,7 @@ export const Header = () => {
             </ul>
           </nav>
 
-          <nav >
+          <nav>
             <ul className="flex gap-4 md:gap-10 ">
               <li className="hidden md:block">
                 <a href="#">Nossas Lojas</a>
