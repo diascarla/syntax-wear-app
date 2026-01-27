@@ -12,7 +12,7 @@ const registerUserFormSchema = z
         return name.trim().replace(/^\w/, (c) => c.toLocaleUpperCase());
       }),
 
-    email: z.email("E-mail inválido"),
+    email: z.string().email("E-mail inválido"),
 
     password: z
       .string()
