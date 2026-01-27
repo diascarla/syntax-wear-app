@@ -1,73 +1,83 @@
-# React + TypeScript + Vite
+# SyntaxWear - E-commerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto foi desenvolvido como parte de um curso de desenvolvimento **Full Stack**. Trata-se de uma aplicação front-end para um e-commerce de calçados e moda urbana, focado em performance, usabilidade e boas práticas de código.
 
-Currently, two official plugins are available:
+Este será um projeto **completo**, integrando **Banco de Dados** e **API**, permitindo simular uma compra em um e-commerce real.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📱 Demonstração
 
-## React Compiler
+![Demonstração do Projeto](insira-o-link-do-seu-gif-aqui)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+> _Espaço reservado para o GIF de apresentação da página._
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Funcionalidades
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+O projeto conta com as seguintes funcionalidades principais:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **Galeria de Produtos:** Exibição de produtos em destaque com layout responsivo (Grid).
+- **Navegação por Categorias:** Filtros para produtos Masculinos, Femininos e Outlet.
+- **Página "Nossas Lojas":** Informações sobre as lojas físicas da marca.
+- **Formulário de Cadastro:**
+  - Validação robusta de dados utilizando **Zod**.
+  - Verificação de CPF, e-mail e confirmação de senha.
+  - Feedback visual de erros em tempo real.
+- **Roteamento:** Navegação fluida entre páginas utilizando **TanStack Router**.
+- **Design Responsivo:** Interface adaptada para Mobile, Tablet e Desktop.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛠️ Tecnologias Utilizadas
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+As principais ferramentas e bibliotecas utilizadas na construção deste projeto foram:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **[React](https://react.dev/)** - Biblioteca para construção de interfaces.
+- **[TypeScript](https://www.typescriptlang.org/)** - Superset do JavaScript com tipagem estática.
+- **[Vite](https://vitejs.dev/)** - Build tool rápida para projetos web modernos.
+- **[Tailwind CSS](https://tailwindcss.com/)** - Framework de utilitários para estilização.
+- **[TanStack Router](https://tanstack.com/router/latest)** - Gerenciamento de rotas type-safe.
+- **[React Hook Form](https://react-hook-form.com/)** - Gerenciamento de estado de formulários.
+- **[Zod](https://zod.dev/)** - Validação de esquemas (schema validation).
+- **[React Icons](https://react-icons.github.io/react-icons/)** - Pacote de ícones.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📦 Como Rodar o Projeto
+
+Siga os passos abaixo para executar a aplicação em sua máquina local:
+
+1.  **Clone o repositório:**
+
+    ```bash
+    git clone <url-do-repositorio>
+    ```
+
+2.  **Acesse a pasta do projeto:**
+
+    ```bash
+    cd syntax-wear-app
+    ```
+
+3.  **Instale as dependências:**
+
+    ```bash
+    npm install
+    ```
+
+4.  **Execute o servidor de desenvolvimento:**
+
+    ```bash
+    npm run dev
+    ```
+
+5.  **Acesse no navegador:**
+    O projeto estará rodando em `http://localhost:5173` (ou outra porta indicada no terminal).
+
+## 📂 Estrutura de Pastas
+
+- `src/components`: Componentes reutilizáveis (Botões, Formulários, Galeria, etc.).
+- `src/pages`: Páginas da aplicação e configuração de rotas.
+- `src/mocks`: Dados fictícios (mock) para simular produtos.
+- `src/assets`: Imagens e recursos estáticos.
+- `src/Utils`: Funções utilitárias (ex: validador de CPF).
+
+---
+
+Desenvolvido por **Carla** durante o curso Full Stack.
